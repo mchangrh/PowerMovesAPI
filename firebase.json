@@ -16,6 +16,10 @@
       {
         "source": "**",
         "function": "powerMove"
+      },
+      {
+        "source": "/jsonp.js",
+        "function": "powerMoveP"
       }
     ]
   }
