@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Power Move</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        @import url("index.css");
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-link" href="https://jellyfish-rights.tumblr.com/">jellyfish-rights (Source)</a>
+        <a class="navbar-link" href="https://github.com/mchangrh/PowerMovesAPI">Github</a>
+        <a class="navbar-link" href="https://github.com/mchangrh/API.md">API</a>
+    </nav>
+    <!-- hero, hero-body and container are seperate. hero for fullscreen, hero-body for padding and contianer for transparent background-->
+    <div class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title" id="quote"></h1>
+                <h2 class="subtitle" id="source"></h2>
+            </div>
+        </div>
+    </div>
+    <!-- Get JSONP Endpoint -->
+    <script src="https://us-central1-powermove-api.cloudfunctions.net/powerMoveP"></script>
+    <!-- Set Quote -->
+    <script async src="setQuote.js"></script>
+    <!-- async set pastel-->
+    <script async src="pastel.js"></script>
+</body>
+
+</html>
