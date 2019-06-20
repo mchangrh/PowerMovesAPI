@@ -14,11 +14,11 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/jsonp.js",
+        "function": "powerMoveP"
       },
       {
-        "source": "/jsonp.js",
+        "source": "/jsonp{,/**}",
         "function": "powerMoveP"
       },
       {
@@ -32,6 +32,10 @@
       {
         "source": "**/*.json",
         "function": "powerMove"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
     ]
   }
