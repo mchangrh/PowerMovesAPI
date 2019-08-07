@@ -17,6 +17,6 @@ exports.powerMoveP = functions.https.onRequest((request, response) => {
 })
 
 function getRandom(array) {
-  let index = Math.floor(Math.random() * array.length);
+  let index = Math.floor(Math.random() * array.length);1
   return array[index];
 }
