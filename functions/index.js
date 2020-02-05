@@ -35,7 +35,7 @@ function fetchIndex(index) {
 }
 
 function jsonpConvert(powerMove) {
-  start = 'powermoves=('
+  start = 'powermove=('
   end = ');'
   return start + JSON.stringify(powerMove) + end
 }

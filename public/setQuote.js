@@ -1,5 +1,5 @@
 function set() {
-    document.getElementById("quote").innerHTML = powerMoves.quote;
-    document.getElementById("source").innerHTML = powerMoves.source;
+    document.getElementById("quote").innerHTML = powermove.quote;
+    document.getElementById("source").innerHTML = powermove.source;
 }
 set();
