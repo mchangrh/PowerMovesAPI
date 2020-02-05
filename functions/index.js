@@ -3,19 +3,22 @@ const functions = require('firebase-functions');
 let powerMoveList = require('./powerMoves.json');
 
 exports.powerMove = functions.https.onRequest((request, response) => {
+  let powerMove = ""
   if (request.body.id) {
-    const powerMove = fetchIndex(request.body.id)
+    powerMove = fetchIndex(request.body.id)
   } else {
-    const powerMove = getRandom()
+    powerMove = getRandom()
   }
   response.status(200).send(powerMove)
 })
 
 exports.powerMoveP = functions.https.onRequest((request, response) => {
+  // create Powermove ahead of time
+  let powerMove = ""
   if (request.body.id) {
-    const powerMove = fetchIndex(request.body.id)
+    powerMove = fetchIndex(request.body.id)
   } else {
-    const powerMove = getRandom()
+    powerMove = getRandom()
   }
   // craft response for JSONP
   jsonpResponse = jsonpConvert(powerMove)
